@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using AvaloniaEdirDemo.ViewModels;
-using AvaloniaEdirDemo.Views;
+using AvaloniaEditDemo.ViewModels;
+using AvaloniaEditDemo.Views;
 
-namespace AvaloniaEdirDemo
+namespace AvaloniaEditDemo
 {
     public class App : Application
     {

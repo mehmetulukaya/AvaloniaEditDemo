@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/AvaloniaEdirDemo/bin/Debug/netcoreapp3.0/AvaloniaEdirDemo.dll",
+            "program": "${workspaceFolder}/AvaloniaEditDemo/bin/Debug/netcoreapp3.0/AvaloniaEditDemo.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/AvaloniaEdirDemo",
+            "cwd": "${workspaceFolder}/AvaloniaEditDemo",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

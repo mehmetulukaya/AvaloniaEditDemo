@@ -20,7 +20,7 @@ using AvaloniaEdit.Highlighting;
 using AvaloniaEdit.Indentation.CSharp;
 using AvaloniaEdit.Rendering;
 
-namespace AvaloniaEdirDemo.Views
+namespace AvaloniaEditDemo.Views
 {
     using Pair = KeyValuePair<int, IControl>;
 

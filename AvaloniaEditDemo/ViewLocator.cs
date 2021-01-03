@@ -4,9 +4,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using AvaloniaEdirDemo.ViewModels;
+using AvaloniaEditDemo.ViewModels;
 
-namespace AvaloniaEdirDemo
+namespace AvaloniaEditDemo
 {
     public class ViewLocator : IDataTemplate
     {
