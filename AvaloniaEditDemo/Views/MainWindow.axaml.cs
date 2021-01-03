@@ -17,6 +17,7 @@ using AvaloniaEdit.CodeCompletion;
 using AvaloniaEdit.Document;
 using AvaloniaEdit.Editing;
 using AvaloniaEdit.Highlighting;
+using AvaloniaEdit.Indentation;
 using AvaloniaEdit.Indentation.CSharp;
 using AvaloniaEdit.Rendering;
 
@@ -35,7 +36,7 @@ namespace AvaloniaEditDemo.Views
 
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();
 
             _textEditor = this.FindControl<TextEditor>("Editor");
             _textEditor.Background = Brushes.Transparent;
@@ -45,6 +46,7 @@ namespace AvaloniaEditDemo.Views
             _textEditor.TextArea.TextEntering += textEditor_TextArea_TextEntering;
             // _textEditor.TextArea.IndentationStrategy = new Indentation.CSharp.CSharpIndentationStrategy();
             _textEditor.TextArea.IndentationStrategy = new CSharpIndentationStrategy();
+            // _textEditor.TextArea.IndentationStrategy = new DefaultIndentationStrategy();
 
             _addControlBtn = this.FindControl<Button>("addControlBtn");
             _addControlBtn.Click += _addControlBtn_Click;
@@ -53,7 +55,7 @@ namespace AvaloniaEditDemo.Views
             _clearControlBtn.Click += _clearControlBtn_Click; ;
 
             _textEditor.TextArea.TextView.ElementGenerators.Add(_generator);
-            
+
             this.AddHandler(PointerWheelChangedEvent, (o, i) =>
             {
                 if (i.KeyModifiers != KeyModifiers.Control) return;
